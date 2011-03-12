@@ -415,7 +415,7 @@ def main():
     if not (len(args) == 1 or options.url):
         parser.print_help()
         sys.exit(1)
-    logger.basicConfig(level=logger.INFO)
+    logging.basicConfig(level=logging.INFO)
 
     file = None
     if options.url:
